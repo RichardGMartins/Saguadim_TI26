@@ -99,4 +99,56 @@
     text-align: center;
     padding: 10px;
   }
- 
+  /*Pagina do cabeçalho da loja*/
+  .menu {
+    list-style-type: none; /* Remove os marcadores de lista */
+    margin: 0;
+    padding: 0;
+    background-color: hwb(0 95% 5%); /* Define a cor de fundo do menu */
+    border-radius: 10px;
+  }
+  
+  .menu li {
+    display: inline-block; /* Faz com que os itens de menu fiquem um ao lado do outro */
+  }
+  
+  .menu li a {
+    display: block; /* Define os links como elementos de bloco para ocuparem todo o espaço horizontal disponível */
+    padding: 8px 16px; /* Adiciona espaçamento interno aos links */
+    text-decoration: none; /* Remove a decoração de texto padrão (sublinhado) */
+    color: #333; /* Define a cor do texto dos links */
+  }
+  
+  .menu li a:hover {
+    background-color: #550469; /* Define a cor de fundo ao passar o mouse sobre os links */
+    color: #fff; /* Define a cor do texto ao passar o mouse sobre os links */
+    border-radius: 10px;
+  }
+  
+  .menuloja{
+    float:right;
+  }
+  .menu-loja {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+    width: 1020px;
+    margin-left: 200px;
+    background-color: hwb(0 95% 5%); 
+  }
+  .menu-loja li {
+    display: inline-block; 
+  }
+  .menu-loja li a {
+    display: block; 
+    padding: 8px 16px; 
+    text-decoration: none; 
+    color: #550469;
+    font-weight: bold; 
+  }
+  .menu-loja li a:hover {
+    background-color: #550469;
+    color: #fff; 
+    border-radius: 10px;
+  }
