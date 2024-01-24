@@ -7,7 +7,8 @@ CREATE TABLE usuarios (
     usu_login VARCHAR(20) NOT NULL,
     usu_senha VARCHAR(50) NOT NULL,
     usu_status CHAR(1) NOT NULL,
-    usu_key VARCHAR(10) NOT NULL
+    usu_key VARCHAR(10) NOT NULL,
+    usu_email VARCHAR(100) NOT NULL
 );
 -- Criação da tabela de Cliente
 CREATE TABLE cliente (
@@ -19,13 +20,14 @@ CREATE TABLE cliente (
     cli_curso VARCHAR(50) NOT NULL,
     cli_sala INT NOT NULL,
     cli_status CHAR(1) NOT NULL,
-    cli_saldo FLOAT(10,2) NOT NULL
+    cli_saldo FLOAT(10,2) NOT NULL,
+    cli_senha VARCHAR(50) NOT NULL
 );
 -- Criação da tabela produtos
 CREATE TABLE produtos (
     pro_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     pro_nome VARCHAR(100) NOT NULL,
-    pro_descricacao VARCHAR(150) NOT NULL,
+    pro_descricao VARCHAR(150) NOT NULL,
     pro_custo DECIMAL(10,2) NOT NULL,
     pro_preco DECIMAL(10,2) NOT NULL,
     pro_quantidade INT NOT NULL,
@@ -50,10 +52,10 @@ CREATE TABLE vendas(
     fk_iv_codigo VARCHAR(50) NOT NULL
 );
 CREATE TABLE item_venda(
-    iv_id INT NOT NULL AUTO_INCREMENT,
+    iv_id INT NOT NULL AUTO_INCREMENT  PRIMARY KEY,
     iv_quantidade INT NOT NULL,
     iv_total DECIMAL(10,2) NOT NULL,
-    iv_codigo VARCHAR(50) NOT NULL PRIMARY KEY,
+    iv_codigo VARCHAR(50) NOT NULL,
     fk_pro_id INT NOT NULL
 );
 

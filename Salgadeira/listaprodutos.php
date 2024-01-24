@@ -56,7 +56,7 @@ if($_SERVER ["REQUEST_METHOD"] == 'POST'){
             <td><?=$tbl[1]?></td>
             <td><?=number_format($tbl[2],2,',','.')?></td>
             <td><?=number_format($tbl[3],2,',','.')?></td>
-            <td><a href="alterarproduto.php"?id=<?=$tbl[4]?>><input type="button" value="ALTERAR"></td>
+            <td><a href="alterarproduto.php?id=<?=$tbl[4]?>"><input type="button" value="ALTERAR"></td>
             <td><?=$check = ($tbl[5]== 's')?"SIM":"NÃO"?></td>
             </tr>
             <?php 

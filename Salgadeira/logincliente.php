@@ -18,7 +18,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
       #SE USUARIO EXISTE LOGA, SE NÃO, NÃO LOGA
     if ($resultado == 0){
         echo "<script>window.alert('USUARIO INCORRETO');</script>";
-        echo"<script>window.location.href='logincliente.html';</script>";
+        echo"<script>window.location.href='./logincliente.html';</script>";
     }
     else {
         $sql = "SELECT * FROM cliente WHERE cli_email = '$email' AND cli_senha = '$senha' AND cli_status ='s'";

@@ -29,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel= "stylesheet" href="./css/estiloadm.css">
+        <link rel= "stylesheet" href="./css/style.css">
         <title>Lista dos CLientes</title>
     </head>
     <body>
@@ -50,6 +50,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
                         <th>NOME</th>
                         <th>ATIVO</th>
                         <th>EMAIL</th>
+                        <th>ALTERAR</th>
                     </tr>
                     <!--INICIO DE PHP + HTML-->
                     <?php
@@ -63,6 +64,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
                             <!--AO CLICAR NO BOTÃO ELE JA TRARA O ID DO USUARIO PARA PAGINA DO ALTERAR -->
                             <td><?= $check = ($tbl[7] == "s") ? "SIM" : "NÃO" ?></td> 
                             <td><?= $tbl[2] ?></td>
+                            <td><a href="alterarcliente.php?id=<?=$tbl[0]?>"><input type="button" value="ALTERAR"></td>
                         </tr>
                     <?php
                     }
