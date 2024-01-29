@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>LOGIN</title>
+</head>
+<body>
+    <div class="div-form">
+        <div id="login">
+            <form action="logincliente.php" method="post">
+            <label >EMAIL</label>
+            <input type="email" name="email" id="email" placeholder="E-mail" required>
+            <label>SENHA</label>
+            <input type="password" name="senha" id="senha" placeholder="Senha" required>
+            <button type="submit" id="btn">Login</button>
+            </form>
+            <h5><a href="#" id="toggleCadastra">Não tem Conta Clique Aqui</a></h5>
+        </div>
+        <div id="cadastra">
+                <form action="cadastracliente.php" method="post">
+                <label >EMAIL</label>
+                <input type="email" name="email" id="email" placeholder="E-mail" required>
+                <label>SENHA</label>
+                <input type="password" name="senha" id="senha" placeholder="Senha" required>
+                <label>NOME</label>
+                <input type="text" name="nome" id="nome" placeholder="Nome" required>
+                <label >TELEFONE</label>
+                <input type="number" name="telefone" id="telefone" placeholder="Telefone" required>
+                <label >CPF</label>
+                <input type="number" name="cpf" id="cpf" placeholder="CPF" required>
+                <label >CURSO</label>
+                <input type="text" name="curso" id="curso" placeholder="Curso" required>
+                <label >SALA</label>
+                <input type="text" name="sala" id="sala" placeholder="Sala" required>
+                <button type="submit" id="btn2">Cadastrar</button>
+            </form>
+            <h5><a href="#" id="toggleLogin"> Tem Conta Clique Aqui</a></h5>
+        </div>
+    </div>
+        <script src="script.js"></script>
+</body>
+</html>

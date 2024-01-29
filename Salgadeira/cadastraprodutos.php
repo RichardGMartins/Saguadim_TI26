@@ -19,11 +19,11 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         VALUES ('$nome', '$descricao', $custo, $preco,$quantidade,'$validade',$fornecedor,'s')";
         mysqli_query($link,$sql);
         echo"<script>window.alert('Produto cadastrado com sucesso');</script>";
-        echo"<script>window.location.href='listaproduto.php'</script>";
+        echo"<script>window.location.href='listaprodutos.php'</script>";
     }
     else{
         echo"<script>window.alert('Produto já existente');</script>";
-        echo"<script>window.location.href='listaproduto.php'</script>";
+        echo"<script>window.location.href='listaprodutos.php'</script>";
     }
 }
 ?>
