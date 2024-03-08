@@ -1,154 +1,245 @@
- 
 #cadastra {
-    display: none;
+  display: none;
+}
+
+#login {
+  display: flex;
+  flex-direction: column;
+}
+
+#login h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#login label {
+  margin-bottom: 8px;
+  color: #555;
+}
+
+#login input {
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+#login button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+#login button:hover {
+  background-color: #45a049;
+}
+
+#login .error {
+  color: #ff0000;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.div-form {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  margin-top: 90px;
+  margin-left: auto;
+  margin-right: auto;
+}
+ .menu {
+  list-style-type: none; /* Remove os marcadores de lista */
+  margin: 0;
+  padding: 0;
+  background-color: #ccc; /* Define a cor de fundo do menu */
+  font-weight: bold;
+  
+}
+
+.menu li {
+  display: inline-block; /* Faz com que os itens de menu fiquem um ao lado do outro */
+  cursor: pointer;
+}
+
+.menu li a {
+  display: grid; /* Define os links como elementos de bloco para ocuparem todo o espaço horizontal disponível */
+  padding: 8px 16px; /* Adiciona espaçamento interno aos links */
+  text-decoration: none; /* Remove a decoração de texto padrão (sublinhado) */
+  color: #333; /* Define a cor do texto dos links */
+}
+
+.menu li a:hover {
+  background-color: #4caf50; /* Define a cor de fundo ao passar o mouse sobre os links */
+  color: #fff; /* Define a cor do texto ao passar o mouse sobre os links */
+  border-radius: 10px;
+}
+
+.menu-loja{
+  float:right;
+}
+.menu-loja {
+  list-style-type: none; 
+  padding: 12px 20px;
+  border-radius: 10px;
+  margin-left: 200px;
+   font-weight: bold;
+}
+.menu-perfil{
+  float: right;
+  margin: 7px 5px 0 0;
+  color:#000;
+  font-weight: bold;
+  padding: 20px 20px;
+  margin-top: -68px;
+  text-decoration: none;
+  list-style-type: none;
+  cursor: pointer;
   }
-/* Reset de estilos para garantir consistência entre navegadores */
-* {
+.menu-loja li {
+  display: inline-block; 
+}
+
+body {
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Define um fundo simples e uma fonte padrão para o corpo do documento */
-  body {
-    background-color: #f4f4f4;
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Estiliza o cabeçalho com uma cor de fundo e texto simples */
-  header {
-    background-color: #333;
-    color: #fff;
+    background-color: #f7f7f7;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
     text-align: center;
-  }
-  
-  /* Estiliza links com sublinhado removido e cor de texto suave */
-  a {
-    text-decoration: none;
+    margin-bottom: 20px;
     color: #333;
-  }
-  .div-form {
-    background-color: rgb(39, 139, 146);
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    margin: 20px auto;
-    padding: 20px;
-    width: 300px;
-    margin-top: 250px;
-  }
-  
-  /* Estiliza uma barra de navegação simples */
-  nav {
-    background-color: #444;
-    color: #fff;
-    text-align: center;
+}
+
+label {
+    margin-bottom: 8px;
+    color: #555;
+}
+
+input {
     padding: 10px;
-  }
-  
-  /* Define estilos para uma seção principal do conteúdo */
-  .main-content {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  /* Estiliza cabeçalhos com tamanhos diferentes */
-  h1 {
-    font-size: 28px;
-  }
-  
-  h2 {
-    font-size: 24px;
-  }
-  
-  h3 {
-    font-size: 20px;
-  }
-  
-  /* Estiliza caixas de texto de entrada e rótulos */
-  input[type="text"],
-  input[type="password"],
-  input[type="email"],
-  textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
     border-radius: 4px;
-  }
-  
-  label {
-    font-weight: bold;
-  }
-  
-  /* Estiliza botões com uma cor de fundo e texto claro */
-  button {
-    background-color: #333;
+    font-size: 14px;
+    width: 90%;
+}
+#background input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-bottom: 0;
+  width: 10%;
+}
+
+button {
+    background-color: #4caf50;
     color: #fff;
-    padding: 10px 20px;
+    padding: 12px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
-  
-  /* Estiliza rodapé com cor de fundo escura e texto claro */
-  footer {
-    background-color: #333;
-    color: #fff;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    width: 97%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.error {
+    color: #ff0000;
+    margin-bottom: 10px;
     text-align: center;
-    padding: 10px;
-  }
-  /*Pagina do cabeçalho da loja*/
-  .menu {
-    list-style-type: none; /* Remove os marcadores de lista */
-    margin: 0;
-    padding: 0;
-    background-color: hwb(0 95% 5%); /* Define a cor de fundo do menu */
-    border-radius: 10px;
-  }
+    font-size: 14px;
+}
+.table {
+  border-collapse: collapse;
+  text-align: center;
+  color: #000;
+  text-decoration: #bbb0be;
+  width: 600px;
+  margin: auto;
   
-  .menu li {
-    display: inline-block; /* Faz com que os itens de menu fiquem um ao lado do outro */
-  }
-  
-  .menu li a {
-    display: block; /* Define os links como elementos de bloco para ocuparem todo o espaço horizontal disponível */
-    padding: 8px 16px; /* Adiciona espaçamento interno aos links */
-    text-decoration: none; /* Remove a decoração de texto padrão (sublinhado) */
-    color: #333; /* Define a cor do texto dos links */
-  }
-  
-  .menu li a:hover {
-    background-color: #550469; /* Define a cor de fundo ao passar o mouse sobre os links */
-    color: #fff; /* Define a cor do texto ao passar o mouse sobre os links */
-    border-radius: 10px;
-  }
-  
-  .menuloja{
-    float:right;
-  }
-  .menu-loja {
-    list-style-type: none; 
-    margin: 0;
-    padding: 0;
-    border-radius: 10px;
-    width: 1020px;
-    margin-left: 200px;
-    background-color: hwb(0 95% 5%); 
-  }
-  .menu-loja li {
-    display: inline-block; 
-  }
-  .menu-loja li a {
-    display: block; 
-    padding: 8px 16px; 
-    text-decoration: none; 
-    color: #550469;
-    font-weight: bold; 
-  }
-  .menu-loja li a:hover {
-    background-color: #550469;
-    color: #fff; 
-    border-radius: 10px;
-  }
+}
+td {
+  width: 300px;
+  text-align: center;
+  align-items: center;
+}
+#background {
+  background-color: #4caf50;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  padding: 20px;
+  width: 300px;
+}
+a:link{
+  text-decoration: none;
+}
+a {
+  color: #000;
+}
+
+#confirmarForm{
+  display: none;
+}
+
+#nav-user, #nav-product, #nav-client, #nav-perfil {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease-out, visibility 0.2s ease-out;
+}
+#nav-user.ativado, #nav-product.ativado, #nav-client.ativado,#nav-perfil.ativado {
+  opacity: 1;
+  visibility: visible;
+}
+#nav-user, #nav-product, #nav-client, #nav-perfil {
+  position: absolute;
+}
+#user {
+  padding: 20px 20px;
+  font-weight: bold;
+}
+
+.user {
+  float: right;
+  position: flex;
+}
+
+.ecomendas {
+  margin-top: 20px;
+}
+
+.nav-perfil {
+  margin-left: -95px;
+  list-style-type: none;
+  line-height: 30px;
+}

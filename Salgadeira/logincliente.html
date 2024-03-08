@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>LOGIN</title>
+</head>
+<body>
+    <div class="div-form">
+        <div id="login">
+            <h2>LOGIN</h2>
+            <form action="logincliente.php" method="post">
+            <label for="email" >EMAIL</label>
+            <br>
+            <input type="text" name="email" id="email" required>
+            <br>
+            <label for="password">SENHA</label>
+            <br>
+            <input type="password" name="senha" id="senha" required>
+            <br>
+            <button type="submit">Login</button>
+            </form>
+            <h5><a href="#" id="toggleCadastra">Não tem Conta Clique Aqui</a></h5>
+        </div>
+        <div id="cadastra">
+                    <h2>CADASTRO</h2>
+                <form action="cadastracliente.php" method="post">
+                <label >EMAIL</label>
+                <input type="email" name="email" id="email" required>
+                <label>SENHA</label>
+                <input type="password" name="senha" id="senha" required>
+                <label>NOME</label>
+                <input type="text" name="nome" id="nome" required>
+                <label >TELEFONE</label>
+                <input type="tel" name="telefone" id="telefone" required>
+                <br>
+                <label >CPF</label>
+                <input type="number" name="cpf" id="cpf" required>
+                <label >CURSO</label>
+                <input type="text" name="curso" id="curso" required>
+                <label >SALA</label>
+                <input type="text" name="sala" id="sala" required>
+                <button type="submit" id="btn2">Cadastrar</button>
+            </form>
+            <h5><a href="#" id="toggleLogin"> Tem Conta Clique Aqui</a></h5>
+        </div>
+    </div>
+        <script src="script.js"></script>
+</body>
+</html>
