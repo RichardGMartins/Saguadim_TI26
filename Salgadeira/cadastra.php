@@ -9,7 +9,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
 
     #INSERIR INSTRUÇÕES NO BANCO
-    $sql = "SELECT COUNT(usu_id) FROM usuarios WHERE usu_email = '$_email' OR usu_login ='$login'";
+    $sql = "SELECT COUNT(usu_id) FROM usuarios WHERE usu_email = '$email' OR usu_login ='$login'";
+    echo $sql;
     $result = mysqli_query($link, $sql);
     $result = mysqli_fetch_array($result) [0];
     #Grava log
